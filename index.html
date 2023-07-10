@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Satma CE is the only traceability software for waste that tracks waste across the Circular Economy- from collection, segregation, recycling to final product.">
+    <title>Satma CE | Mumbai</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    <!-- External/Main CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- MapBox GL CSS -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+</head>
+<body>
+    
+    <main class="website-container">
+
+        <!-- Left Side Panel -->
+        <div class="sidePanelInfo">
+            <!-- Company information - top -->
+            <div class="company-info-container">
+                <div class="company-logo">
+                    <img src="./assets/images/company-logo.png" alt="Satma CE Logo" id="imageLogo">
+                    <img src="./assets/images/hamburger-icon.png" alt="HamBurger Icon" id="hamburgerIcon">
+                </div>
+    
+                <div class="company-description">
+                    <p id="description-text">This report has been made for demonstration purpose by Satma CE only.
+                        <br><br>Any elements or images used here cannot be replicated or reused elsewhere.</p>
+                </div>
+            </div>
+    
+            <!-- product information - bottom -->
+            <div class="product-info-container">
+                <div class="product-title">
+                    <span id="pt-title">Shrink Wrap</span><span id="pt-company">( XYZ Pvt Ltd )</span>
+                </div>
+    
+                <img src="./assets/images/recycle-workers.png" alt="Recycle Workers" id="imageRecycle">
+    
+                <p id="pt-description">Shrink Wrap with 60% recycled post - consumer waste.</p>
+    
+                <img src="./assets/images/plastic-bags.png" alt="Plastic Bags" id="imageBags">
+            </div>
+        </div>
+
+        <!-- Product description mobile -->
+        <div class="product-description-mobile">
+            <div class="product-image-content">
+                <img src="./assets/images/plastic-bags.png" alt="Plastic Bags" id="imagePlasticBags">
+            </div>
+            <div class="product-info-content">  
+                <div class="title-info">
+                    <span id="pt-title-info">Retail Bag</span><span id="pt-code">( SKU 246757BU )</span>
+                </div>
+                <div class="description-info">
+                    <p class="pt-info">Waste Used <br>75% rLPDE</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Right Side Panel -->
+        <div class="sidePanelProduct">
+            <!-- Pages listing -->
+            <div class="product-workflow-container">
+
+                <a href="#" class="product-content active">
+                    <div class="product-workflow-title">
+                        <article>Product Journey</article>
+                    </div>
+                    <div class="product-workflow-description">
+                        <p>Streamline the entire product journey in the Circular Economy with our comprehensive waste traceability software</p>
+                    </div>
+                </a>
+
+                <a href="./material.html" class="product-content">
+                    <div class="product-workflow-title">
+                        <article>Material Flow</article>
+                    </div>
+                    <div class="product-workflow-description">
+                        <p>Effortlessly trace waste through the Circular Economy, optimizing material flow from collection to final product</p>
+                    </div>
+                </a>
+
+                <a href="./images.html" class="product-content">
+                    <div class="product-workflow-title">
+                        <article>Images</article>
+                    </div>
+                    <div class="product-workflow-description">
+                        <p>Glimpses into Workflow: Showcasing our work process through captivating snapshots</p>
+                    </div>
+                </a>
+
+                <a href="./report.html" class="product-content">
+                    <div class="product-workflow-title">
+                        <article>Emission Report</article>
+                    </div>
+                    <div class="product-workflow-description">
+                        <p>Tracking environmental impact with Satma CE's powerful analytics</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- buttons mapping -->
+            <div class="map-button-container">
+                <!-- Progress Bar -->
+                <div class="progress-bar-container">
+                    
+                    <!-- Buttons -->
+                    <div class="buttons-container" id="btn1">
+                        <button type="button" class="btn-click active" data="1">
+                            <img src="./assets/images/collection-icon.png" alt="Collection Icon" class="btn-icons">
+                        </button>
+                        <label class="btn-text">Collection</label>
+                    </div>
+            
+                    <div class="buttons-container">
+                        <button type="button" class="btn-click" data="2">
+                            <img src="./assets/images/segregation-icon.png" alt="Collection Icon" class="btn-icons">
+                        </button>
+                        <label class="btn-text">Segregation</label>
+                    </div>
+            
+                    <div class="buttons-container" data="3">
+                        <button type="button" class="btn-click" data="3">
+                            <img src="./assets/images/recycling-icon.png" alt="Collection Icon" class="btn-icons">
+                        </button>
+                        <label class="btn-text">Recycling</label>
+                    </div>
+            
+                    <div class="buttons-container" data="4">
+                        <button type="button" class="btn-click" data="4">
+                            <img src="./assets/images/product-icon.png" alt="Collection Icon" class="btn-icons">
+                        </button>
+                        <label class="btn-text">Product</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- New Map Container -->
+            <div class="mapbox-container">
+                <div class="map-content map-active" id="mapbox1"></div>
+                <div class="map-content map-active" id="mapbox2"></div>
+                <div class="map-content map-active" id="mapbox3"></div>
+                <div class="map-content map-active" id="mapbox4"></div>
+            </div>
+
+            <!-- Progress bar -->
+            <div class="progressbar"></div>
+
+        </div>
+    </main>
+
+    <!-- Map Script -->
+    <script src="./assets/js/map.js" defer></script>
+    <!-- JavaScript -->
+    <script src="./assets/js/script.js" defer></script>
+</body>
+</html>

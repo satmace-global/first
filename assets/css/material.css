@@ -1,0 +1,51 @@
+/* Material Context */
+.material-container {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px #57D5A5;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.material-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 20px 0 0 20px;
+}
+.material-description {
+    padding: 14px 32px 20px 20px;
+    color: #5F5C5C;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+/* Workflow chart */
+.material-flow-chart {
+    width: 100%;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
+}
+#imageMaterialFlow {
+    width: 100%;
+    height: 364px;
+    border-radius: 10px;
+}
+/* Responsive */
+@media screen and (max-width: 1200px) {
+    .material-container {
+        margin-top: 35px;
+    }
+    .material-flow-chart {
+        margin-top: 45px;
+    }
+}
+/* Responsive CSS - Mobile */
+@media screen and (max-width: 800px) {
+    #imageMaterialFlow {
+        height: 850px;
+        content: url("../images/material-flow-chart-small.png");
+    }
+}
